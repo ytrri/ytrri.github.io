@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #017a25;
+    color: #ffd700;
+    text-align: center;
+}
+
+header {
+    background-color: #005f1e;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffd700;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a, a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover, a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+.banner {
+    background: url('gabapentin-neurontin-2025.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #000000;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    background-color: #028a30;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+h1, h2 {
+    color: #ffd700;
+    text-shadow: 2px 2px 4px #005f1e;
+}
+
+p, li {
+    color: #ffffff;
+}
+
+.gallery {
+    background: #fffaf0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #005f1e;
+    color: #ffd700;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    clear: both;
+    font-size: 1.1em;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #028a30;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    color: #ffffff;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+    background-color: #017a25;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+form button {
+    background-color: #ffd700;
+    color: #005f1e;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #ff4500;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .banner {
+        height: 200px;
+    }
+    section {
+        padding: 1em;
+    }
+    form {
+        padding: 0.5em;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #b22234;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #b22234;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #660000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.player-container {
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+iframe[src*="youtube.com"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    margin: 1em 0;
+    border: 2px solid #b22234;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
